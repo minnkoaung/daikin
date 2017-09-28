@@ -4,6 +4,12 @@ body{
 .yello{
 	color: #e1b902;
 }
+.pink{
+	color:#ba2b9d;
+}
+.blue{
+	color:#01bdeb;
+}
 .app_logo{
 	display: block;
 	margin: 0px auto;
@@ -22,12 +28,21 @@ body{
 	margin-top: 50px;
 }
 .dash_content{
+	min-height: 256px;
 	border: 2px solid #3b3b3b;
 	padding: 40px 0;
 	text-decoration: none;
 }
 .dash_content:hover{
 	border: 2px solid #e1b902;
+}
+.dash_content_pink:hover{
+	border: 2px solid #ba2b9d;
+	text-decoration: none !important;
+}
+.dash_content_blue:hover{
+	border: 2px solid #01bdeb;
+	text-decoration: none !important;
 }
 .dash_content_pic{
 	padding: 20px 0;
