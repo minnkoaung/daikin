@@ -1,0 +1,41 @@
+body{
+	background: #171717
+}
+.yello{
+	color: #e1b902;
+}
+.app_logo{
+	display: block;
+	margin: 0px auto;
+}
+.dashboard_sence{
+	border: 1px solid red;
+}
+.d_log,.dash_content_pic{
+	display: block;
+	margin: 0px auto;	
+}
+.wrapper{
+	padding: 16px;
+}
+.dash_content_container{
+	margin-top: 50px;
+}
+.dash_content{
+	border: 2px solid #3b3b3b;
+	padding: 40px 0;
+	text-decoration: none;
+}
+.dash_content:hover{
+	border: 2px solid #e1b902;
+}
+.dash_content_pic{
+	padding: 20px 0;
+}
+.dash_content_label{
+	display: block;
+	font-size: 1.5em;
+}
+.dash_content_label:hover{
+	text-decoration: none;
+}
