@@ -14,15 +14,24 @@ body{
 	display: block;
 	margin: 0px auto;
 }
+.top_nav_search_input, .top_nav_search_btn{
+	height: 36px !important;
+}
+.top_nav_search_btn{
+	line-height: 0px !important;
+}
 .dashboard_sence{
 	border: 1px solid red;
 }
 .d_log,.dash_content_pic{
 	display: block;
-	margin: 0px auto;	
+	margin: 0px auto;
 }
 .wrapper{
 	padding: 16px;
+}
+.dash_wrapper{
+	margin-top: 50px;
 }
 .dash_content_container{
 	margin-top: 50px;
@@ -53,4 +62,21 @@ body{
 }
 .dash_content_label:hover{
 	text-decoration: none;
+}
+.dash_content_text{
+	padding: 17px 5px;
+}
+.dash_content_sence{
+	width: 100%;	
+}
+.dash_sence{
+	margin-top: 10px;
+}
+.main_contents_container{
+	border-top:1px solid #3b3b3b;
+	padding: 20px 0;
+}
+.main_contents_container .content_area{
+	border: 1px solid #3b3b3b;
+	padding: 16px;
 }

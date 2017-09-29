@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Daikin | Dashboard</title>
+        <title>Daikin | Lights</title>
         <!-- CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -42,13 +42,13 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Dashboard</a></li>
+            <li><a href="#">Dashboard</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><!-- <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> --> All Controls <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li><a href="camera.html">Camera</a></li>
                 <li><a href="doors.html">Doors</a></li>
-                <li><a href="lights.html">Lights</a></li>
+                <li class="active"><a href="lights.html">Lights</a></li>
                 <li><a href="locks.html">Lock</a></li>
                 <li><a href="sensor.html">Sensors</a></li>
               </ul>
@@ -91,79 +91,46 @@
             <div class="row">
                     <img class="d_log img-responsive" src="assets/img/icon/logo.jpg" alt="">
             </div>
-
-            <div class="row dash_content_container">
-                <!-- Entrance -->
-                <div class="col-md-4 col-sm-4 col-xs-4 dash_content">
-                    <a href="" style="text-decoration: none;">
-                        <img class="dash_content_pic img-responsive" src="assets/img/icon/4.jpg" alt="">
-                        <p class="yello text-center dash_content_label" for="Entrance" >Entrance</p>
-                    </a>
+            
+            <div class="row main_contents_container">
+                <div class="col-md-3 side-nave">
+                    <a href="" class="btn btn-primary btn-block">All Switchs</a>
+                    <a href="" class="btn btn-primary btn-block">Ground Floor</a>
+                    <a href="" class="btn btn-primary btn-block">Frist Floor</a>
                 </div>
-                <!-- Study -->
-                <div class="col-md-4 col-sm-4 col-xs-4 dash_content">
-                    <a href="" style="text-decoration: none;">
-                        <img class="dash_content_pic img-responsive" src="assets/img/icon/4.jpg" alt="">
-                        <p class="yello text-center dash_content_label" for="Study" >Study</p>
-                    </a>
-                </div>
-                <!-- Living RM Lock -->
-                <div class="col-md-4 col-sm-4 col-xs-4 dash_content dash_content_pink">
-                    <a href="" style="text-decoration: none;">
-                        <img class="dash_content_pic img-responsive" src="assets/img/icon/8.jpg" alt="">
-                        <p class="pink text-center dash_content_label" for="Living RM Lock" >Living RM Lock</p>
-                    </a>
-                </div>
-                 <!-- Daikin Purifier -->
-                <div class="col-md-4 col-sm-4 col-xs-4 dash_content dash_content_blue">
-                    <a href="" style="text-decoration: none;">
-                        <img class="dash_content_pic img-responsive" src="assets/img/icon/22.jpg" alt="">
-                        <p class="blue text-center dash_content_label" for="Living RM Lock" >Daikin Purifier</p>
-                    </a>
-                </div>
-                 <!-- IAQ  -->
-                <div class="col-md-4 col-sm-4 col-xs-4 dash_content dash_content_blue">
-                    <a href="" style="text-decoration: none;">
-                        <h2 class="blue text-center dash_content_text">99.88</h3>
-                        <p class="blue text-center dash_content_label" for="IAQ" >IAQ</p>
-                    </a>
-                </div>
-                <!-- IMQ Purifier -->
-                <div class="col-md-4 col-sm-4 col-xs-4 dash_content dash_content_blue">
-                    <a href="" style="text-decoration: none;">
-                          <h2 class="blue text-center dash_content_text">461</h3>
-                        <p class="blue text-center dash_content_label" for="IMQ" >IMQ</p>
-                    </a>
-                </div>
-                <!-- IAQ Dust Purifier -->
-                <div class="col-md-4 col-sm-4 col-xs-4 dash_content dash_content_blue">
-                    <a href="" style="text-decoration: none;">
-                          <h2 class="blue text-center dash_content_text">461</h3>
-                        <p class="blue text-center dash_content_label" for="IAQ Dust" >IAQ Dust</p>
-                    </a>
-                </div>  
-            </div>
-            <hr>
-            <div class="row sence_container">
-                <h1 class="text-center blue"> Favourite Sences</h1>
-                <br>    
-                <!--Sence1 -->
-                <div class="col-md-4 col-sm-6 col-xs-12  dash_sence dash_content_yellow">
-                    <a href="" style="text-decoration: none;">
-                          <img class="img-responsive dash_content_sence" src="assets/img/dashboard_sence_1.jpg" alt="Sence_1">
-                    </a>
-                </div>
-                <!--Sence2 -->
-                <div class="col-md-4 col-sm-6 col-xs-12 dash_sence dash_content_yellow">
-                    <a href="" style="text-decoration: none;">
-                          <img class="img-responsive dash_content_sence" src="assets/img/dashboard_sence_1.jpg" alt="Sence_1">
-                    </a>
-                </div>
-                 <!--Sence3 -->
-               <div class="col-md-4 col-sm-6 col-xs-12 dash_sence  dash_content_yellow">
-                    <a href="" style="text-decoration: none;">
-                          <img class="img-responsive dash_content_sence" src="assets/img/dashboard_sence_1.jpg" alt="Sence_1">
-                    </a>
+                <div class="col-md-9 content_area">
+                    <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
+                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0201</p>
+                    </div>
+                     <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
+                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0202</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
+                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0203 </p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
+                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0204</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
+                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0205</p>
+                    </div>
+                     <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
+                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0206</p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
+                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0207 </p>
+                    </div>
+                    <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
+                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0208</p>
+                    </div>
                 </div>
             </div>
 
@@ -172,9 +139,25 @@
 
         <!-- Javascript -->
         <script src="assets/js/jquery-1.11.1.min.js"></script>
+         <script>
+           $(document).ready(function(){
+         
+            $('.light').click(function(){
+                if (!$(this).hasClass('on')) {
+                    $(this).attr('src', 'assets/img/bulb_on.png');
+                    $(this).addClass('on')
+                } else  {
+                    $(this).attr('src', 'assets/img/bulb_off.png');
+                    $(this).removeClass('on')
+                }
+        });
+
+           });
+        </script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <!-- <script src="assets/js/jquery.backstretch.min.js"></script> -->
         <script src="assets/js/scripts.js"></script>
+
     </body>
 
 </html>
