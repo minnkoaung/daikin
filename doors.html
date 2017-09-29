@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Daikin | Lights</title>
+        <title>Daikin | Doors</title>
         <!-- CSS -->
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -100,37 +100,23 @@
                 </div>
                 <div class="col-md-9 content_area">
                     <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
-                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
-                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0201</p>
+                        <img id="material" class="material dash_content_pic img-responsive" src="assets/img/door_close.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Door #0201</p>
                     </div>
                      <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
-                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
-                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0202</p>
-                    </div>
-                    <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
-                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
-                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0203 </p>
-                    </div>
-                    <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
-                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
-                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0204</p>
-                    </div>
-                    <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
-                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
-                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0205</p>
+                        <img id="material" class="material dash_content_pic img-responsive" src="assets/img/door_close.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Door #0202</p>
                     </div>
                      <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
-                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
-                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0206</p>
+                        <img id="material" class="material dash_content_pic img-responsive" src="assets/img/door_close.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Door #0203</p>
                     </div>
-                    <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
-                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
-                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0207 </p>
+                     <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
+                        <img id="material" class="material dash_content_pic img-responsive" src="assets/img/door_close.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Door #0205</p>
                     </div>
-                    <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
-                        <img id="light" class="light dash_content_pic img-responsive" src="assets/img/bulb_off.png" alt="">
-                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Light #0208</p>
-                    </div>
+
+                    
                 </div>
             </div>
 
@@ -142,12 +128,12 @@
          <script>
            $(document).ready(function(){
          
-            $('.light').click(function(){
+            $('.material').click(function(){
                 if (!$(this).hasClass('on')) {
-                    $(this).attr('src', 'assets/img/bulb_on.png');
+                    $(this).attr('src', 'assets/img/door_open.png');
                     $(this).addClass('on')
                 } else  {
-                    $(this).attr('src', 'assets/img/bulb_off.png');
+                    $(this).attr('src', 'assets/img/door_close.png');
                     $(this).removeClass('on')
                 }
         });
