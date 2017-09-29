@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Daikin | Camera</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="assets/css/form-elements.css">
+        <link rel="stylesheet" href="assets/css/app.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    </head>
+    <!-- body start -->
+    <body>
+        
+ <!-- Fixed navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img class="d_log img-responsive" src="assets/img/icon/logo.jpg" alt="D_nav_logo" width="100"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><!-- <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> --> All Controls <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="camera.html">Camera</a></li>
+                <li class="active"><a href="doors.html">Doors</a></li>
+                <li><a href="lights.html">Lights</a></li>
+                <li><a href="locks.html">Lock</a></li>
+                <li><a href="sensor.html">Sensors</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sences</a></li>
+            <li><a href="#">Favourites</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><!-- <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> --> Setting <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><span class="glyphicon glyphicon-signal" aria-hidden="true"></span> Network Setting</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> App Setting</a></li>
+                <li role="separator" class="divider"></li>
+                 <li><a href="#"><a href="#"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Support Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                  <input type="text" class="form-control top_nav_search_input" placeholder="Search">
+                </div>
+             <button type="submit" class="btn btn-default top_nav_search_btn">Submit</button>
+            </form>
+             <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> User Name <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> Log Out</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Edit Profile</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+        <div class="container wrapper dash_wrapper">
+            <div class="row">
+                    <img class="d_log img-responsive" src="assets/img/icon/logo.jpg" alt="">
+            </div>
+            
+            <div class="row main_contents_container">
+                <div class="col-md-3 side-nave">
+                    <a href="" class="btn btn-primary btn-block">All Switchs</a>
+                    <a href="" class="btn btn-primary btn-block">Ground Floor</a>
+                    <a href="" class="btn btn-primary btn-block">Frist Floor</a>
+                </div>
+                <div class="col-md-9 content_area">
+                    <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
+                        <img id="material" class="material dash_content_pic img-responsive" src="assets/img/camera_off.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Camera #0201</p>
+                    </div>
+                     <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
+                        <img id="material" class="material dash_content_pic img-responsive" src="assets/img/camera_off.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Camera #0202</p>
+                    </div>
+                     <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
+                        <img id="material" class="material dash_content_pic img-responsive" src="assets/img/camera_off.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Camera #0203</p>
+                    </div>
+                     <div class="col-md-3 col-sm-4 col-xs-3 dash_content dash_content_yello">
+                        <img id="material" class="material dash_content_pic img-responsive" src="assets/img/camera_off.png" alt="">
+                        <p class="yello text-center dash_content_label" for="Living RM Lock" >Camera #0205</p>
+                    </div>
+
+                    
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+         <script>
+           $(document).ready(function(){
+         
+            $('.material').click(function(){
+                if (!$(this).hasClass('on')) {
+                    $(this).attr('src', 'assets/img/camera_on.png');
+                    $(this).addClass('on')
+                } else  {
+                    $(this).attr('src', 'assets/img/camera_off.png');
+                    $(this).removeClass('on')
+                }
+        });
+
+           });
+        </script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <!-- <script src="assets/js/jquery.backstretch.min.js"></script> -->
+        <script src="assets/js/scripts.js"></script>
+
+    </body>
+
+</html>
